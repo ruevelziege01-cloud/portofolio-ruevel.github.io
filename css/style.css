@@ -11,10 +11,15 @@
 
 body {
   width: 100%;
-  height: 100vh;
+  min-height: 100vh; /* ubah dari height jadi min-height */
   background-image: url("../img/background.jpg");
-  overflow: hidden;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed; /* agar background tetap diam saat scroll */
+  overflow-x: hidden; /* cegah scroll horizontal */
+  overflow-y: auto; /* aktifkan scroll vertikal */
 }
+
 
 nav {
   width: 100%;
